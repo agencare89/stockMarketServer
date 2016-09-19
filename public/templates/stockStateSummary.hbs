@@ -10,7 +10,7 @@
         </ul>
     </div>
 
-    <div class="large-12 columns" style="height: 300px; overflow: scroll;">
+    <div class="large-12 columns">
         <table>
             <thead style="background-color:lightgray">
             <tr>
@@ -44,8 +44,8 @@
                         &emsp; {{company.shareVolume}}
                     </td>
                     <td class="stack-for-tiny round secondary button-group" style="text-align: center;">
-                        <li><a href="#" class="button tiny" {{action 'placeBid'  company.id}}>Buy</a></li>
-                        <li><a href="#" class="button tiny" {{action 'placeSale'  company.id}}>Sell</a></li>
+                        <li><a href="#orderForm" class="button tiny" {{action 'placeBid'  company.id}}>Buy</a></li>
+                        <li><a href="#orderForm" class="button tiny" {{action 'placeSale'  company.id}}>Sell</a></li>
                     </td>
                 </tr>
             {{/each}}
@@ -54,3 +54,4 @@
     </div>
 
 </div>
+<div id="orderForm"></div>

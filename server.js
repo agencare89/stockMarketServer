@@ -4,7 +4,7 @@ var logger      = require('./logger');
 var mongoose    = require('mongoose');
 var locks       = require('locks');
 // connect the mongoose to mongolab, see webtech projects
-mongoose.connect('mongodb://agencare:Hockey10!@ds049641.mongolab.com:49641/stockmarket');
+mongoose.connect('mongodb://agencare:********@ds049641.mongolab.com:49641/stockmarket');
 
 var app = express();        // create an express app
 var mutex = locks.createMutex();
